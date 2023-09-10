@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.estrela {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
+  border-radius: 50%;
+  animation: twinkling 3s infinite;
+}
+
+@keyframes twinkling {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+nav{
+  color: white;
+  display: flex;
+  gap: 2%;
+  padding-left: 5%;
+  padding-top: 2%;
+  font-family: 'Bahnschrift', sans-serif;
+  font-size: larger;
+}
+
+#link {
+  text-decoration: none;
+  color: #fff;
+}
+
+#link :hover{
+  text-decoration: underline;
+}
+
+#galaxia a{
+  text-decoration: none;
+  color: white;
+
+}
+
+#galaxia {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  font-family: 'Bahnschrift', sans-serif;
+  font-size: larger;
+}
+
+#galaxia :hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#espaco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#sol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  box-shadow: 0px 0px 10px 10px yellow;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.planeta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+}
+
+#mercurio {
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  background-color: #b0b0b0;
+  animation: spin-mercurio 8s linear infinite;
+}
+
+#venus {
+  width: 40px;
+  height: 40px;
+  background-color: #f1c232;
+  animation: spin-venus 14s linear infinite;
+}
+
+#terra {
+  width: 45px;
+  height: 45px;
+  background-color: #4775d1;
+  animation: spin-terra 20s linear infinite;
+}
+
+#marte {
+  width: 35px;
+  height: 35px;
+  background-color: #d2691e;
+  animation: spin-marte 26s linear infinite;
+}
+
+#jupiter {
+  width: 80px;
+  height: 80px;
+  background-color: #c88248;
+  animation: spin-jupiter 32s linear infinite;
+}
+
+#saturno {
+  width: 70px;
+  height: 70px;
+  background-color: #d8a066;
+  animation: spin-saturno 38s linear infinite;
+}
+
+#urano {
+  width: 60px;
+  height: 60px;
+  background-color: #00a2e8;
+  animation: spin-urano 44s linear infinite;
+}
+
+#netuno {
+  width: 55px;
+  height: 55px;
+  background-color: #002b7f;
+  animation: spin-netuno 50s linear infinite;
+}
+
+@keyframes spin-mercurio {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(70px);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(70px);
+  }
+}
+
+@keyframes spin-venus {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(110px);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(110px);
+  }
+}
+
+@keyframes spin-terra {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(150px);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(150px);
+  }
+}
+
+@keyframes spin-marte {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(190px);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(190px);
+  }
+}
+
+@keyframes spin-jupiter {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(250px);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(250px);
+  }
+}
+
+@keyframes spin-saturno {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(330px);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(330px);
+  }
+}
+
+@keyframes spin-urano {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(400px);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(400px);
+  }
+}
+
+@keyframes spin-netuno {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(465px);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(465px);
+  }
+}
